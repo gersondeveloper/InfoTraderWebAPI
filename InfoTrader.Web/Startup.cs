@@ -33,7 +33,10 @@ namespace InfoTrader.Web
         {
             
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
-                .AddFluentValidation();
+                .AddFluentValidation(fv=> {
+                    fv.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
+                    fv.ImplicitlyValidateChildProperties = true;
+                });
             services.AddResponseCompression();
             
             services.AddTransient<ICustomerRepository, CustomerRepository>();

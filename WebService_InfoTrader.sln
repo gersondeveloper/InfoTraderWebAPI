@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Data", "2 - Data", "{FE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Repository", "3 - Repository", "{BD889F2D-C96C-4B53-82D5-013BA7D2E0D3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - CrossCutting", "5 - CrossCutting", "{2F192C23-8D7C-4E10-8F43-A85DA073BDC7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - CrossCutting", "4 - CrossCutting", "{2F192C23-8D7C-4E10-8F43-A85DA073BDC7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoTrader.Domain", "InfoTrader.Domain\InfoTrader.Domain.csproj", "{C74984E6-7747-451C-9095-6AC9ABB34AF4}"
 EndProject
@@ -20,11 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Messages", "Messages", "{04
 		InfoTraderResources.rct = InfoTraderResources.rct
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Service", "4 - Service", "{F9163606-E5A1-4977-8495-AB072926B311}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfoTrader.Repository", "InfoTrader.Repository\InfoTrader.Repository.csproj", "{2846DE0B-4FBE-42FA-B77A-35206FCC720A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoTrader.Service", "InfoTrader.Service\InfoTrader.Service.csproj", "{9C620A45-0DB5-40A3-9BC3-F1664262DEB0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfoTrader.Repository", "InfoTrader.Repository\InfoTrader.Repository.csproj", "{2846DE0B-4FBE-42FA-B77A-35206FCC720A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Tests", "5 - Tests", "{0DB2C6A9-CC1E-4E41-816D-C912D58E420C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,10 +38,6 @@ Global
 		{C74984E6-7747-451C-9095-6AC9ABB34AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C74984E6-7747-451C-9095-6AC9ABB34AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C74984E6-7747-451C-9095-6AC9ABB34AF4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9C620A45-0DB5-40A3-9BC3-F1664262DEB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9C620A45-0DB5-40A3-9BC3-F1664262DEB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9C620A45-0DB5-40A3-9BC3-F1664262DEB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9C620A45-0DB5-40A3-9BC3-F1664262DEB0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2846DE0B-4FBE-42FA-B77A-35206FCC720A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2846DE0B-4FBE-42FA-B77A-35206FCC720A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2846DE0B-4FBE-42FA-B77A-35206FCC720A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -56,7 +50,6 @@ Global
 		{E52AA435-F2C0-4D6A-AD18-A1B4C1232A2B} = {D47692F8-587E-49E4-B8D9-F52B85A591F4}
 		{C74984E6-7747-451C-9095-6AC9ABB34AF4} = {FE99F954-CA6C-4456-B76C-682BAA4F2366}
 		{04CE33E0-4D92-4715-A8FC-45B4DF1A7C6A} = {2F192C23-8D7C-4E10-8F43-A85DA073BDC7}
-		{9C620A45-0DB5-40A3-9BC3-F1664262DEB0} = {F9163606-E5A1-4977-8495-AB072926B311}
 		{2846DE0B-4FBE-42FA-B77A-35206FCC720A} = {BD889F2D-C96C-4B53-82D5-013BA7D2E0D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

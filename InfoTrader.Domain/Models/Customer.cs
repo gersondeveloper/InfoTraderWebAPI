@@ -34,17 +34,26 @@ namespace InfoTrader.Domain.Models
     {
         public CustomerValidator()
         {
-            ResourceManager rm = new ResourceManager("InfoTraderResources", typeof(Customer).Assembly);
+            RuleFor(x => x.CustomerId)
+                .NotNull();
 
-            RuleFor(x => x.CustomerId).NotNull();
-            RuleFor(x => x.Name).NotNull()
-                .Length(2, 50);
-            RuleFor(x => x.Address).NotNull()
-                .Length(2, 100);
-            RuleFor(x => x.Website).NotNull()
-                .Length(2, 150);
+            RuleFor(x => x.Name)
+                .NotNull()
+                .Length(2, 50)
+                .WithMessage("Mínimo de 2 e máximo de 50 caracteres");
+
+            RuleFor(x => x.Address)
+                .NotNull()
+                .Length(2, 100)
+                .WithMessage("Mínimo de 2 e máximo de 100 caracteres"); ;
+
+            RuleFor(x => x.Website)
+                .NotNull()
+                .Length(2, 150)
+                .WithMessage("Mínimo de 2 e máximo de 150 caracteres"); ;
+
             RuleFor(x => x.CreditLimit).NotNull()
-                .WithMessage(rm.GetString("campo_obrigatorio"));
+                .WithMessage("campo_obrigatorio");
         }
 
     }
